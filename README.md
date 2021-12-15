@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
+## Installation
+composer create-project laravel/laravel vue-laravel-authentication
+composer require laravel/ui
+php artisan ui vue --auth
+npm install
+npm run dev
+php artisan serve
+.env
+db create vue-laravel , with utf8mb4_unicode_ci
+php artisan migrate:fresh --seed
+php artisan make:model Secret -mcfs
+git init
+git add .
+git config user.name "Shaon Majumder"
+git config user.email "smazoomder@gmail.com"
+git commit -m "laravel vue scaffolding"
+git remote add origin https://github.com/ShaonMajumder/Laravel-Vue-Authentication.git
+sudo git push origin master
+ --- after giving credentials
+git config credential.helper store
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
