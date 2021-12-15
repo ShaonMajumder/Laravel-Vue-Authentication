@@ -1,0 +1,937 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #684A51;
+}
+.navbar{
+    box-shadow: 0px 4px 14px rgba(104, 74, 81, 0.2);
+}
+.banner{
+    background-image: url(../image/career/careerBg.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 210px;
+}
+.careerBannerText{
+
+}
+.careerBannerText h1{
+    padding-top: 173px;
+    font-size: 64px;
+    font-weight: bold;
+    color: #ffff;
+}
+.pageName p{
+    color: #ffff;
+    padding: 18px 3px 10px 9px;
+}
+
+
+@media only screen and (max-width: 576px){
+    .banner{
+        position: relative;
+        height: 235px;
+        padding-bottom: 20px;
+    }
+    .careerBannerText h1{
+        padding-top: 92px;
+        font-size: 32px;
+        font-weight: bold;
+        color: #ffff;
+        padding-left: 64px;
+    }
+    .pageName{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        left: 0;
+        bottom: 0px;
+        position: absolute;
+    }
+    .pageName p{
+        color: #ffff;
+        padding: 18px 3px 0px 9px;
+    }
+}
+
+
+/*  dedicated section */
+.dedicated{
+    padding: 64px 0;
+}
+.dedicatedText h5{
+    padding: 10px 10px;
+    color: #A28C91;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10;
+}
+.dedicatedText h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+.dedicatedText p{
+    padding: 0 10px;
+    font-size: 16px;
+}
+.newText{
+    padding: 24px 0px;
+}
+.newText h4{
+    padding: 10px 10px;
+    font-weight: 700;
+    color: #684A51;
+}
+.dedicatedText button{
+    padding: 15px 30px;
+}
+.projectManeger{
+    padding: 40px;
+    border-radius: 10px;
+    background-color:#F8EEEE ;
+    margin-top: 64px;
+}
+.projectManeger p{
+    font-size: 16px;
+    color: #A28C91;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.projectManeger h4{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0px 10px;
+    color: #684A51;
+}
+.projectManeger a{
+    font-size: 16px;
+    color: #EE333A;
+    font-weight: 500;
+    padding: 0 10px;
+    padding-bottom: 104px;
+    display: block;
+}
+.bottomText{
+    border-top: 1px solid #5555;
+    padding: 0px 10px;
+}
+.bottomText img{}
+.bottomText p{
+    padding-top: 13px;
+}
+
+
+/*  our story  section */
+
+.ourStory{
+    background-color: #F8EEEE;
+    border-bottom: 2px solid #000;
+}
+
+
+
+/*  application  section */
+.application{
+    padding: 64px 0;
+}
+.apcHeading{
+    padding-bottom: 40px;
+}
+
+.apcHeading p{
+    color: #684A51;
+    padding: 10px;
+    width: 59%;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 16px;
+}
+.accordion .accordion-item{
+    background: #FFFFFF;
+    border: 2px solid #F3CACB;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+.accordion .accordion-item .accordion-button{
+    background: #fff;
+    box-shadow: none;
+    color: #684A51;
+    font-size: 18px;
+    font-weight: 500;
+}
+.accordion .accordion-item .accordion-body p{
+    color: #A28C91;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+}
+.careerContact{
+    background-color: #F8EEEE;
+    padding: 40px;
+}
+.careerContact h5{
+    color: #A28C91;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.careerContact h2{
+    font-weight: 700;
+    color: #000 !important;
+    font-size: 40px;
+    padding: 20px 0;
+
+}
+.careerContact input[type="text"]{
+    border: 0px;
+    padding: 20px 22px;
+}
+.careerContact textarea{
+    border: 0px;
+    padding: 20px;
+}
+.careerContact .input-group-text{
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fff;
+    border: 0px solid #ced4da;
+    border-radius: .25rem;
+    color: #EE333A;
+}
+.careerContact button{
+    background-color: #EE333A;
+    border: 0px;
+    margin-top: 13px;
+    padding: 8px 0px;
+    font-weight: 500;
+    font-size: 21px;
+}
+.careerContact button:hover{
+    background-color: #af1e23 ;
+}
+
+.accordion-button::after{
+    background-image: url(../image/career/arrowOpen.svg);
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../image/career/close.png);
+}
+
+.careerContact .form-control:focus{
+    box-shadow: none;
+}
+.careerContact .btn-check:focus+.btn, .btn:focus{
+    box-shadow: none;
+}
+
+
+   /*============ faq page css============ */
+.query{    
+    padding: 40px;
+    background-color: #EE333A;
+    margin-bottom: 40px;
+}
+.query h5{
+    color: #FAFCFE;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 10px 10px 0;
+}
+.query h2{
+    color: #FAFCFE;
+    padding: 10px 10px 10px 0;
+    font-size: 40px;
+}
+.query p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #FAFCFE;
+    padding: 10px 10px 10px 0;
+}
+
+.query button{
+    background-color: #FAFCFE;
+    color: #EE333A;
+    font-weight: 700;
+    border: 0px;
+    padding: 10px 0px;
+    width: 163px;
+}
+
+   /*=== Terms and condition page css========= */
+
+.termsCondition{
+    padding: 64px 0;
+}
+
+
+.nav{
+    padding: 0px 0px;
+    background-color: #F8EEEE;
+    box-shadow: none;
+}
+.nav-pills .nav-link{
+    background: 0 0;
+    border: 0;
+    border-radius: .25rem;
+    padding: 19px 14px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ee333a;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #ee333a;
+    color: #F8EEEE;
+}
+
+
+
+.tabText p{
+    color: #A28C91;
+    font-weight: 500;
+    padding: 20px;
+}
+
+  /* ======== become merchant page =======  */
+.validStep{}
+.validNumber{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+.validNumber h3{
+    font-weight: 500;
+    font-size: 18px;
+    color: #EE333A;
+}
+.validDetails{}
+.validDetails h6{
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+}
+.validDetails p{
+    font-size: 14px;
+    text-align: left;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #ee333a;
+    color: #F8EEEE;
+}
+
+.merchantInputField{
+    padding: 64px 0;
+    border-bottom: 2px solid #ee333a;
+}
+.merchantInputField h3{
+    font-weight: 500;
+    font-size: 18px;
+    color: #231F20;
+    padding-bottom: 40px;
+}
+.becomeMerchantRegistration{
+    margin-bottom: 24px;
+}
+.becomeMerchantRegistration label{
+    color: #684A51;
+    font-weight: 500;
+    font-size: 16px;
+}
+.becomeMerchantRegistration p{
+    font-weight: 500;
+    font-size: 14px;
+    color: #A28C91;
+    padding: 0;
+    margin-top: -12px;
+}
+.becomeMerchantRegistration .form-control{
+    border: 0;
+    padding: 15px 10px;
+    background: #F4F4F4;
+}
+.becomeMerchantRegistration .input-group-text{
+    border: 0;
+    background: #F4F4F4;
+}
+.merachtFrom{
+    background-color: #ee333a;
+    color: #Ffff;
+    border: 0;
+    padding: 12px 16px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.becomeMerchantRegistration .form-select{
+    border: 0;
+    padding: 15px 10px;
+    background-color: #F4F4F4;
+}
+.becomeMerchantRegistration .btn-outline-secondary{
+    border-right: 1px solid #ddd;
+
+    background-color: #F4F4F4;
+    border: 0;
+}
+
+
+
+   /*=== about us page css========= */
+
+.whyBest{
+    padding: 64px 0;
+    background: linear-gradient(270deg, #FFBA08 0%, #E85D04 100%);
+}
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row-flex >[class*="col-"] {
+    margin-bottom: 30px;
+  }
+.bestContent{
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 24px;
+    padding: 30px;
+    border-radius: 20px;
+    height: 100%;
+}
+.imageSection{}
+.imageSection img{}
+.bestContentText{
+    padding-left: 20px;
+}
+.bestHeadingText{}
+.bestHeadingText h4{
+    color: #684A51;
+    font-weight: 500;
+    padding: 10px;
+}
+.bestBodyText{}
+.bestBodyText p{
+    color: #A28C91;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 500px){
+    .bestContent{
+        display: block;
+        background-color: #fff;
+        margin-bottom: 24px;
+        padding: 0px;
+    }
+    .imageSection img{
+        padding-left: 14px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .bestBodyText p{
+        font-size: 14px;
+    }
+}
+
+
+.aboutTestimonial{
+    padding: 64px 146px;
+}
+.TestimonialSlider{}
+.sliderContent{}
+.leftContent{}
+.leftContent h2{
+    padding: 10px;
+}
+.leftContent h5{
+    color: #A28C91;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.rightContent {
+    background-image: url(../image/coma2.svg);
+    background-repeat: no-repeat;
+    padding-top: 16px;
+    padding-left: 23px;
+}
+.rightContent p{
+    padding: 10px;
+    color: #A28C91;
+    font-weight: 500;
+    font-size: 16px;
+}
+.clientName{
+    margin-top: 40px;
+   
+}
+.clientName h4{
+    padding: 10px;
+    font-weight: 500;
+    color: #684A51;
+}
+.clientName p{
+  padding-left: 10px;
+    color: #A28C91;
+    font-size: 16px;
+
+}
+
+.aboutTestimonial .slick-dots{
+    text-align: left;
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    top: 35%;
+    left: 2%;
+}
+.aboutTestimonial .slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block; 
+    width: 20px;
+    height: 0px;
+    padding: 0px;
+    cursor: pointer;
+    color: transparent; 
+    border: 0;
+    outline: none;
+    background: transparent; 
+}
+.aboutTestimonial .slick-dots li{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    background: rgba(162, 140, 145, 0.5);
+}
+
+.aboutTestimonial ul.slick-dots .slick-active {
+    background-color: #ee333a;
+}
+
+.aboutTestimonial .slick-dots li button:before{
+    font-family: 'slick';
+    font-size: 0px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 59px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media only screen and (max-width: 786px){
+    .aboutTestimonial{
+        padding: 34px 10px;
+    }
+    .leftContent h2{
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    .leftContent{
+        padding-left: 25px;
+    }
+    .aboutTestimonial .slick-dots{
+        top: 100%;
+        left: 2%;
+        bottom: 0;
+    }
+}
+@media only screen and (max-width: 376px){
+    .aboutTestimonial .slick-dots{
+        top: 100%;
+        left: 2%;
+        bottom: 0;
+    }
+}
+
+
+
+
+/* order merchant page */
+
+.orderBookingSection{
+    padding: 64px 0px;
+}
+.orderBooking{
+    padding: 30px 24px;
+}
+
+@media only screen and (max-width: 786px){
+  .orderText h2{
+      font-size: 24px;
+  }
+}
+
+/* pricing table page */
+
+.pricingTable{
+    padding: 64px 0;
+}
+.priceHeading{
+    padding: 74px 0px;
+}
+.priceTable{
+    padding: 40px;
+    background: #F8EEEE;
+    border-radius: 20px;
+}
+.priceTable table{
+    background: #F8EEEE;
+}
+.priceTable table tr th{
+    font-size: 24px;
+    font-weight: 700;
+    color: #684A51;
+    padding: 24px 10px;
+}
+.priceTable table tr td{
+    font-size: 16px;
+    padding: 10px;
+    color: #684A51;
+    font-weight: 500;
+}
+.priceCheckbox{
+    padding: 40px;
+}
+.priceCheckbox .form-check label{
+    font-weight: 700;
+    color: #684A51;
+    font-size: 16px;
+    padding: 0px 0px 15px 12px;
+}
+
+.priceCheckbox .form-check input[type='checkbox']{
+    border-radius: .25em;
+    border: 1px solid #ee333a;
+}
+.priceCheckbox .form-check-input:focus{
+    box-shadow: none;
+}
+
+
+/* Contact Us page */
+.contactSection{
+    padding: 64px 0;
+    background-image: url(../image/contact/contactBg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.heading{}
+.heading h5{
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #A28C91;
+    padding: 10px;
+}
+.heading h2{
+    padding: 10px;
+    margin-bottom: 18px;
+}
+.contactContent{
+    padding: 20px 0px;
+}
+.imgArea{
+    padding-right: 24px;
+}
+.imgArea img{}
+.contentArea{
+   
+}
+.contentArea h4{
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #A28C91;
+}
+.contentArea p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #684A51;
+    padding: 10px 0px;
+}
+
+.contactSocial{}
+.contactSocial ul{
+    margin-left: -36px;
+    margin-top: 9px;
+}
+.contactSocial ul li{
+    list-style: none;
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    background: #ee333a;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 50%;
+}
+.contactSocial ul li a{
+    color: #fff;
+}
+.contactSocial ul li a i{}
+
+.massageField{
+    padding-left: 10px;
+}
+.messageDetails{
+    padding-left: 10px;
+}
+.messageDetails label{
+    font-weight: 500;
+    font-size: 14px;
+    color: #684A51;
+
+}
+.messageDetails input[type="text"]{
+    padding: 15px;
+}
+.messageDetails .form-control:focus{
+    box-shadow: none;
+}
+.messageDetails .input-group textarea{
+
+}
+
+.massageField button{
+    background: #EE333A;
+    border-radius: 5px;
+    margin: 21px 0px;
+    padding: 12px 78px;
+    border: 0px;
+    margin-left: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ContactMessgegeText{
+    padding-left: 19px;
+    margin-top: -33px;
+    padding-bottom: 20px;
+    color: #684A51;
+    font-weight: 700;
+}
+ /* tracking page css */
+
+.tackingBanner{
+    background-image: url(../image/Track-order.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 64px 0;
+}
+.trackingLeftContent{}
+.headingText{}
+.headingText h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 24px;
+}
+.titleText{}
+.titleText p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.trackIdSection{
+     padding-top: 50px;
+}
+
+.trackIdSection .form-control{
+    border-left: 0px;
+}
+.trackIdSection .input-group-text{
+    background-color: #fff;
+}
+.trackIdSection .btn-outline-secondary{
+
+    background: #000;
+    border: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.trackIdSection .form-control:focus{
+    box-shadow: none;
+}
+@media (min-width: 376px) and (max-width: 420px){
+    .trackIdSection .form-control{
+        border-left: 0px;
+        width: 36% !important;
+    }
+    .trackIdSection .btn-outline-secondary{
+        padding: 8px 4px;
+        font-size: 10px;
+    }
+}
+
+
+
+
+.orderStatus{
+    padding: 64px 0;
+}
+.statusDetails{}
+.statusDetails h2{
+    font-weight: bold;
+    font-size: 40px;
+    color: #EE333A;
+    margin: 10px 0px;
+}
+.statusDetails h5{
+    font-weight: 500;
+    font-size: 22px;
+    color: #684A51;
+    margin: 10px 0px;
+}
+.statusDetails p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #A28C91;
+    margin: 24px 0px;
+}
+
+.orderDetails{
+    border-bottom: 1px solid #EE333A;
+}
+.ordeerItemName{
+    padding: 40px 0px;
+}
+.ordeerItemName ul{}
+.ordeerItemName ul li{
+    font-weight: 500;
+    font-size: 18px;
+    color: #684A51;
+    list-style: decimal;
+}
+.orderItemDetails{
+    padding-bottom: 64px;
+}
+.orderItemDetails h4{
+    font-weight: bold;
+    font-size: 24px;
+    color: #684A51;
+    padding-bottom: 10px;
+}
+.orderItemDetails p{
+    font-weight: 500;
+    font-size: 16px;
+    color: #A28C91;
+}
+.pastHistory{
+    padding: 49px 0px;
+}
+.pastHistory h4{
+    font-weight: bold;
+    font-size: 24px;
+    color: #684A51;
+}
+.oldHistory p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #684A51;
+    padding-bottom: 10px;
+}
+.orderDeliveryDate{
+    font-weight: 500;
+    font-size: 16px;
+    color: #A28C91;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer{
+    background-color:#231F20 ;
+    padding: 128px 60px 40px;
+}
+
+.footer h4{
+    font-size: 18px;
+    color: #fafcfe94;
+}
+.footer li{
+    list-style: none;
+}
+.footer li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffffd9;
+    font-size: 14px;
+    padding: 6px 0px;
+}
+
+.fBox {
+    background: rgba(255, 255, 255, 0.21);
+    border: 1px solid rgba(236, 241, 244, 0.4);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    padding: 6px 11px;
+}
+
+.fBox img{
+    float: right;
+    padding: 0;
+    margin: 0;
+} */

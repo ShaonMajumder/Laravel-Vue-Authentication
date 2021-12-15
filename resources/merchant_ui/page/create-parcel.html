@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/allPage.css" />
+    <link rel="stylesheet" href="../css/addNewShop.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Sign-Up - Kx Transport</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#">
+                    <img src="../image/kxLogo.svg" alt="">
+                </a>
+                <div class="navbar-toggler">
+                    <a href="#" class=" navLogin">
+                        <i class="far fa-user "></i> login
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+
+
+                    </ul>
+                    <form class="d-flex">
+
+
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <!-- signup information with kx  -->
+
+    <section class="signup">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-xxl-1 col-xl-1 col-lg-1 col-md-1"></div> -->
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 ">
+
+                    <form action="#" class="mt-5">
+                        <h1 class="text-center pb-4 pt-3">Create Parcel</h1>
+                        <div class="perfonalInfo mb-4">
+                            <h4>Customer Information</h4>
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Full Name</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="fullName" id="fullName"
+                                                placeholder="Username" aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Phone <span class="text-danger">*</span></label>
+                                        <div class="input-group mb-2">
+                                            <input id="phone" type="text" class="form-control" name="phone" value=""
+                                                placeholder="Phone Number" aria-label="phone"
+                                                aria-describedby="basic-addon1" required autocomplete="phone">
+                                        </div>
+                                        <p class="text-danger error-text phone_err mb-3"></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Customer Address</label>
+                                        <div class="input-group mb-2">
+                                            <input id="phone" type="text" class="form-control" name="phone" value=""
+                                                placeholder="Phone Number" aria-label="phone"
+                                                aria-describedby="basic-addon1" required autocomplete="phone">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Invoice ID</label>
+                                        <label class="fs-6 float-end text-secondary">Optional</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="fullName" id="fullName"
+                                                placeholder="Username" aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-lg-6 col-md-6 col-sm-6"></div> -->
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="perfonalInfo mb-4">
+                            <h4>Delivery Information</h4>
+                            <div class="row">
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="personalInfoInput">
+                                        <label for="title">Weight <span class="text-danger">*</span></label>
+                                        <div class="input-group mb-3">
+                                            <!-- <select class="form-select" name="PickupArea" id="inputGroupSelect01">
+                                                <option selected>Choose Pickup Area</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select> -->
+                                            <select class="form-select" aria-label="Default select example"
+                                                name="weight" id="basic_weight">
+                                                <option selected disabled>Select a weight </option>
+                                                <option value="1000">1000</option>
+                                                <option value="1500">1500</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2500">2500</option>
+                                                <option value="3000">3000</option>
+                                                <option value="3500">3500</option>
+                                                <option value="4000">4000</option>
+                                                <option value="4500">4500</option>
+                                                <option value="5000">5000</option>
+                                                <option value="5500">5500</option>
+                                                <option value="6000">6000</option>
+                                                <option value="6500">6500</option>
+                                                <option value="7000">7000</option>
+                                                <option value="7500">7500</option>
+                                                <option value="8000">8000</option>
+                                                <option value="8500">8500</option>
+                                                <option value="9000">9000</option>
+                                                <option value="9500">9500</option>
+                                                <option value="10000">10000</option>
+                                                <option value="10500">10500</option>
+                                                <option value="11000">11000</option>
+                                                <option value="11500">11500</option>
+                                                <option value="12000">12000</option>
+                                                <option value="12500">12500</option>
+                                                <option value="13000">13000</option>
+                                                <option value="13500">13500</option>
+                                                <option value="14000">14000</option>
+                                                <option value="14500">14500</option>
+                                                <option value="15000">15000</option>
+                                                <option value="15500">15500</option>
+                                                <option value="16000">16000</option>
+                                                <option value="16500">16500</option>
+                                                <option value="17000">17000</option>
+                                                <option value="17500">17500</option>
+                                                <option value="18000">18000</option>
+                                                <option value="18500">18500</option>
+                                                <option value="19000">19000</option>
+                                                <option value="19500">19500</option>
+                                                <option value="20000">20000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12"></div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="personalInfoInput">
+                                        <label for="title">Weight <span class="text-danger">*</span></label>
+                                        <div class="input-group mb-3">
+                                            <!-- <select class="form-select" name="PickupArea" id="inputGroupSelect01">
+                                                <option selected>Choose Pickup Area</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select> -->
+                                            <select class="form-select" aria-label="Default select example"
+                                                name="delivery_district_id" id="delivery_district_id">
+                                                <option disabled selected>Select an option</option>
+                                                @foreach($districts as $item)
+                                                    <option value="{{ $item->id }}" >{{ $item->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="personalInfoInput">
+                                        <label for="title">Weight <span class="text-danger">*</span></label>
+                                        <div class="input-group mb-3">
+                                            <!-- <select class="form-select" name="PickupArea" id="inputGroupSelect01">
+                                                <option selected>Choose Pickup Area</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select> -->
+                                            <select class="form-select" aria-label="Default select example"
+                                                name="delivery_area_id" id="delivery_area_id">
+                                                <option selected disabled>Delivery Area </option>
+                                                <option value="1000">Dhaka</option>
+                                                <option value="1500">1500</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2500">2500</option>
+                                                <option value="3000">3000</option>
+                                                <option value="3500">3500</option>
+                                                <option value="4000">4000</option>
+                                                <option value="4500">4500</option>
+                                                <option value="5000">5000</option>
+                                                <option value="5500">5500</option>
+                                                <option value="6000">6000</option>
+                                                <option value="6500">6500</option>
+                                                <option value="7000">7000</option>
+                                                <option value="7500">7500</option>
+                                                <option value="8000">8000</option>
+                                                <option value="8500">8500</option>
+                                                <option value="9000">9000</option>
+                                                <option value="9500">9500</option>
+                                                <option value="10000">10000</option>
+                                                <option value="10500">10500</option>
+                                                <option value="11000">11000</option>
+                                                <option value="11500">11500</option>
+                                                <option value="12000">12000</option>
+                                                <option value="12500">12500</option>
+                                                <option value="13000">13000</option>
+                                                <option value="13500">13500</option>
+                                                <option value="14000">14000</option>
+                                                <option value="14500">14500</option>
+                                                <option value="15000">15000</option>
+                                                <option value="15500">15500</option>
+                                                <option value="16000">16000</option>
+                                                <option value="16500">16500</option>
+                                                <option value="17000">17000</option>
+                                                <option value="17500">17500</option>
+                                                <option value="18000">18000</option>
+                                                <option value="18500">18500</option>
+                                                <option value="19000">19000</option>
+                                                <option value="19500">19500</option>
+                                                <option value="20000">20000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Cash Collection Amount</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="PickupPhoneNumber"
+                                                id="shopEmail" placeholder="PickupPhoneNumber " aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Selling Price</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" name="PickupPhoneNumber"
+                                                id="shopEmail" placeholder="PickupPhoneNumber " aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Product Type</label>
+                                        <div class="row">
+
+                                            <div class="col-xxl-6 col-md-12">
+                                                <div class="border rounded">
+                                                    <div class="input-group mt-3 ms-4 mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckIndeterminate">
+                                                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                                               Fragile
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xxl-6 col-md-12">
+                                               <div class="border rounded">
+                                                <div class="input-group mt-3 ms-4 mb-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckIndeterminateT">
+                                                        <label class="form-check-label" for="flexCheckIndeterminateT">
+                                                          liquid
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                               </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 mt-3">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Product Type</label>
+                                        <div class="input-group mb-3">
+                                            <select class="form-select" name="productType" id="product_category">
+                                                <option selected disabled>Choose product Type</option>
+
+                                                <option value="1">Books</option>
+
+                                                <option value="2">Clothing</option>
+
+                                                <option value="3">Crafts</option>
+
+                                                <option value="4">Community</option>
+
+                                                <option value="5">E-Commerce</option>
+
+                                                <option value="6">Electronics &amp; Gadgets</option>
+
+                                                <option value="7">Fashion Accessories</option>
+
+                                                <option value="8">Food</option>
+
+                                                <option value="9">Groceries</option>
+
+                                                <option value="10">Health &amp; Fitness</option>
+
+                                                <option value="11">Stationaries</option>
+
+                                                <option value="12">Others</option>
+
+                                                <option value="13">Furniture</option>
+
+                                                <option value="14">Kids &amp; Mom</option>
+
+                                                <option value="15">Decor</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <div class="personalInfoInput">
+                                        <label class="fs-6">Extra Information</label>
+                                        <div class="input-group mb-3">
+                                            <textarea rows="4" type="text" class="form-control" name="pickupAddress"
+                                                id="pickupAddress" placeholder="Pickup Address" aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="personalInfoInput">
+                                        <input name="parcelValueConfirmation" type="checkbox" class="ant-checkbox-input"
+                                            value="parcelValueConfirmation"><span class="ant-checkbox-inner">
+                                            <span>Please ! Mention your selling price. If your parcel get lost, then you
+                                                will be refounded eqaul to that mentioned amount.</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="buttonArea text-center mt-3 mb-5">
+                            <button class="btn btn-primary">Cancel</button>
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="parcel-calculation mt-5 pt-5 p-3">
+                       <div class="name-area w-100 d-flex justify-content-between ">
+                           <div class="name-section">
+                               <p>Shawon Babu</p>
+                           </div>
+                           <div class="name-section ms-5">
+                               <p class="text-danger">change</p>
+                           </div>
+                       </div>
+                       <div class="peak-area pt-3">
+                           <p>Your peak up area :  <span class="ms-3">  Kalachadpur</span> </p>
+                       </div>
+                       <hr>
+                        <div class="delivery-area">
+                            <div class="delivery-title">
+                                <h6>Your peak up address to delivery charge</h6>
+                            </div>
+                            <div class="delivery-charge-data">
+                                <table class="w-100">
+                                    <tr>
+                                        <td>Cash Collection</td>
+                                        <td>0 BDT</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Delivery Charge</td>
+                                        <td>0 BDT</td>
+                                    </tr>
+
+                                    <tr  class="border-bottom">
+                                        <td>COD Charge</td>
+                                        <td> 000 BDT</td>
+                                    </tr>
+                                     
+                                      <tr>
+                                          <td>Total-Collection</td>
+                                          <td>000 BDT</td>
+                                      </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#basic_weight').select2();
+            $('#delivery_district_id').select2();
+            $('#delivery_area_id').select2();
+            $('#product_category').select2();
+
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#productType').select2();
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#slectSubCategory').select2();
+        });
+    </script>
+
+
+<script type=text/javascript>
+    // Calculate Delivery Charge
+    $(document).ready(function () {
+        $('#basic_charge').val('0');
+        
+        $('#outside_dhaka_charge').val('0');
+        $('#cod_charge').val('0');
+        $('#collection_price').val('0');
+
+        //$('.Delivery-Charge-Calculated').css("display","none");
+        
+   
+        
+        
+        
+        
+        let _basic_charge   = 0;
+        let basic_weight    = 0;
+        let next_weight     = 0;
+        let next_charge     = 0;
+
+        $('#product_price_id').on('input',function(e){
+            showTotal();
+        });
+
+        
+
+        function calculate_total() {
+            let _total = 0;
+            priceElements = [ $('#outside_dhaka_charge').val(), $('#basic_charge').val(), $('#cod_charge').val()] ;
+            priceElements.forEach(element => {
+                _total += Number(element);
+            });
+            return _total;    
+        }
+
+        function calculate_cod() {
+            let _product_price = Number( $('#product_price_id').val() );
+            let _codPrice1 = _product_price *  ( 1 / 100 ) ;
+            return _codPrice1;
+        }
+
+        function showTotal() {
+            $('#cod_charge').val( calculate_cod() );
+            $('#collection_price').val( calculate_total() );
+            $('.Delivery-Charge-Calculated').css("display","block");
+        }
+
+        // Calculate amount
+        $("#basic_weight").on("change", function () {
+            let _basic_weight       = $('#basic_weight').val();
+            let _amount             = (next_charge * ((_basic_weight - basic_weight) / next_weight)) + _basic_charge;
+            $('#basic_charge').val(_amount);
+
+            showTotal();
+
+        });
+
+       
+        $.ajax({
+            type: "GET",
+            url: "{{url('get-delivery-charge')}}",
+            success: function (response) {
+                $("#basic_charge").empty();
+                $("#basic_weight").empty();
+
+                if (response.status === true) {
+                    let _basicCharge = 0;
+                    let _basicWeight = 0;
+                    let _nextWeight = 0;
+                    let _nextCharge = 0;
+                    let _cod        = 0;
+
+                    $.each(response.data, function (key, value) {
+                        _basicCharge = value.basic_charge;
+                        _basicWeight = value.basic_weight;
+                        _nextWeight = value.next_weight;
+                        _nextCharge = value.next_charge;
+                        _cod = value.cod;
+
+
+                        $('input[name="weight"]').val(_basicWeight);
+                        $('input[name="next_weight"]').val(_nextWeight);
+                        $('input[name="next_charge"]').val(_nextCharge);
+                        $('input[name="cod"]').val(_cod);
+                        //$('input[name="delivery_charge"]').val(_basicCharge);
+
+                        //showTotal();
+
+                        next_charge = _nextCharge;
+                        basic_weight = _basicWeight;
+                        next_weight = _nextWeight;
+                        _basic_charge = _basicCharge;
+                    });
+
+                    $("#basic_weight").append( '<option selected disabled>Select a weight </option>' );
+
+                    for(i = _basicWeight; i <= 20000; i += _nextWeight) {
+                        $("#basic_weight").append('' +
+                            '<option value="' + i + '">' + i + '</option>'
+                        );
+                    }
+                }
+            }
+        });
+
+        
+
+        
+
+        
+        
+        
+        // Calculate Total Collection
+        $("#basic_weight").on("keyup change", function () {
+            showTotal();
+        });
+
+        
+       
+
+        $('#delivery_district_id').change(function () {
+            
+            if( $("#select2-delivery_district_id-container").html() != 'Dhaka' ) {
+                $('#outside_dhaka_charge_row').css("display","flex");
+                $('#outside_dhaka_charge').val('150');
+                
+            }else{
+                $('#outside_dhaka_charge_row').css("display","none");
+                $('#outside_dhaka_charge').val('0');
+            }
+            
+
+            var deliveryDistrictID = $(this).val();
+            if (deliveryDistrictID) {
+                $.ajax({
+                    type: "GET",
+                    url: "{{url('get-parcel-area-list')}}?delivery_district_id=" + deliveryDistrictID,
+                    success: function (res) {
+                        if (res) {
+                            $("#delivery_area_id").empty();
+                            $("#delivery_area_id").append('<option disabled>Select</option>');
+                            $.each(res, function (key, value) {
+                                $("#delivery_area_id").append('<option value="' + key + '">' + value + '</option>');
+                            });
+
+                        } else {
+                            $("#delivery_area_id").empty();
+                        }
+                    }
+                });
+            } else {
+                $("#delivery_area_id").empty();
+            }
+
+            showTotal();
+        });
+
+
+    });
+</script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

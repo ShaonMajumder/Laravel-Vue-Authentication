@@ -1,0 +1,2017 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <title>Admin Dashboard - KX-Transport</title>
+
+
+  <style>
+    table {
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+    /* .data-table tr,td{
+      padding: 0px !important;
+    } */
+
+    /* tr>th {
+            white-space: nowrap;
+        } */
+
+    /* tr td:last-child {
+      width: 1%;
+      white-space: nowrap;
+    } */
+
+    .table2>tbody>tr>td {
+      padding: 8px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3F4254;
+    text-align: center;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header text-center p-4">
+        <img src="../images/logo.svg" alt="">
+        <button type="button" id="sidebarCollapse" class="btn">
+          <img id="side-bar-arrow" src="../images/leftArrow.svg" alt="">
+        </button>
+      </div>
+
+      <ul class="list-unstyled components">
+        <li class="">
+          <a href="index.html">
+            <span class="sidNavImag"> <img src="../images/dashboard.svg" alt=""></span>
+            <span class="menu-title">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="">
+          <a href="index.html">
+            <span class="sidNavImag"> <img src="../images/application.svg" alt=""></span>
+            <span class="menu-title">Applications</span>
+          </a>
+        </li>
+
+        <li class="">
+          <a href="index.html">
+            <span class="sidNavImag"> <img src="../images/Compiling.svg" alt=""></span>
+            <span class="menu-title">Subheaders</span>
+          </a>
+        </li>
+
+        <li class="">
+          <a href="index.html">
+            <span class="sidNavImag"> <img src="../images/genarel.svg" alt=""></span>
+            <span class="menu-title">General</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="index.html">
+            <span class="sidNavImag"> <img src="../images/Library.svg" alt=""></span>
+            <span class="menu-title">Builder</span>
+          </a>
+        </li>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <div class="headerOne">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="page/trackingPage.html">Tracking</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Our Service
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="page/pricingTable.html">Pricing</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Coverage Area</a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="rightSideNaveItem d-flex ">
+              <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="../images/search.svg" alt="">
+                  </a>
+                  <ul class="dropdown-menu searchField" aria-labelledby="navbarDropdown">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                  <a class="nav-link notification" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="../images/notification.svg" alt="">
+                    <p class="countNotification">5</p>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">
+                        <div class="notificationItem">
+                          <div class="dateTime">
+                            <h6>Lorem ipsum dolor sit</h6>
+                            <p>22 minute Ago</p>
+                          </div>
+                          <div class="notiIcon"></div>
+                        </div>
+                      </a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav ">
+                <div class="navUser d-flex">
+                  <div class="userInfo ">
+                    <p class="redText">Sean</p>
+                    <p>ILLIYEEN</p>
+                  </div>
+                  <div class="userImag">
+                    <p>s</p>
+                  </div>
+                </div>
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- mobile menu  -->
+
+      <div class="mobile-nav">
+        <div class="container">
+          <div class="row">
+            <div class="mobile-Menu d-flex justify-content-between ">
+              <div class="mobile-logo-area">
+                <img src="images/Frame 110.svg" alt="">
+              </div>
+
+              <ul>
+                <li>
+                  <a class="mobile-Item" href="index.html">
+                    <span class="sidNavImag"> <img src="images/dashboard.svg" alt=""></span>
+                    <span class="menu-title">Dashboard</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="index.html">
+                    <span class="sidNavImag"> <img src="images/application.svg" alt=""></span>
+                    <!-- <span class="menu-title">Applications</span> -->
+                  </a>
+                </li>
+
+                <li>
+                  <a href="index.html">
+                    <span class="sidNavImag"> <img src="images/Compiling.svg" alt=""></span>
+                    <!-- <span class="menu-title">Subheaders</span> -->
+                  </a>
+                </li>
+
+                <li>
+                  <a href="index.html">
+                    <span class="sidNavImag"> <img src="images/genarel.svg" alt=""></span>
+                    <!-- <span class="menu-title">General</span> -->
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html">
+                    <span class="sidNavImag"> <img src="images/Library.svg" alt=""></span>
+                    <!-- <span class="menu-title">Builder</span> -->
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="headerTwo">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="">
+              <h2 class=" text-white ">Dashboard</h2>
+            </a>
+            <a class="ms-3 text-white fw-normal mt-1" href="#">User Name / User ID</a>
+            <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent2">
+
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">
+                    <button class="btn add-new-percel">+ Add New Parcel</button>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link mt-2" aria-current="page" href="#">
+                    Today
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mt-2" aria-current="page" href="#">
+                    Month
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link mt-2" aria-current="page" href="#">
+                    Year
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    <button class="btn add-new-percel">Today: <span>Aug:11 <img src="images/date.svg" alt=""> </span>
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mt-2" aria-current="page" href="#">
+                    <span>
+                      <img src="images/file.svg " alt="">
+                    </span> <span class="ms-1"> Create Store</span>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </nav>
+      </div>
+
+      <div class="subContent mt-5">
+        <div class="container">
+          <div class="subContentItem">
+            <div class="order-tracker">
+              <h4>Order Tracker</h4>
+            </div>
+            <form action="#">
+              <div class="row">
+                <div class="col-xxl-2  col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>Order No / Merchant Inovice</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>Merchant</label>
+                    <div class="input-group mb-3">
+                      <select id="slectValue" class="form-select" name="state">
+                        <option value="AL">Select a Merchant</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>Store</label>
+                    <div class="input-group mb-3">
+                      <select id="store" class="form-select" name="state">
+                        <option value="xgdfjg" disabled>Select a Store</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>Driver</label>
+                    <div class="input-group mb-3">
+                      <select id="driver" class="form-select" name="state">
+                        <option value="AL">Select a Driver</option>
+                        <option value="safawat">Safawat</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>Status</label>
+                    <div class="input-group mb-3">
+                      <select id="status" class="form-select" name="state">
+                        <option value="AL">Select a Status</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>Settled</label>
+                    <div class="input-group mb-3">
+                      <select id="settled" class="form-select" name="state">
+                        <option value="AL">Select a Status</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>Payment Type</label>
+                    <div class="input-group mb-3">
+                      <select id="payment" class="form-select" name="state">
+                        <option value="AL">Select a Type</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                        <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>From Date</label>
+                    <div class="input-group mb-3">
+                      <input type="date" id="birthday" name="birthday">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label>To Date</label>
+                    <div class="input-group mb-3">
+                      <input type="date" id="birthday" name="birthday">
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div class="filterItem">
+                    <label></label>
+                    <div class="input-group mb-3">
+                      <button>Filter</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+
+
+            <!-- <div class="row">
+                            <div class="col-12">
+                                <div class="newArival">
+
+                                    <div class="arivalContent">
+                                        <h4>New Arrivals</h4>
+                                        <p>More than 400+ new parcel</p>
+                                    </div>
+                                    <div class="Arrivalbutton">
+                                        <button>+ Add New Parcel</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> -->
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="data-table">
+        <div class="container rounded bg-white">
+          <div class="row">
+            <div class="table-title">
+              <p>Waiting for pickup</p>
+            </div>
+              <table class="table2" style="width:100%">
+                <thead>
+                  <tr>
+                    <th >DT</th>
+                    <th style="width:20%" >Order</th>
+                    <th>Invoice</th>
+                    <th>Store</th>
+                    <th>User Info</th>
+                    <th>Date</th>
+                    <th>Driver Name</th>
+                    <th>Area</th>
+                    <th>District</th>
+                    <th>Priority</th>
+                    <th><i class="far fa-plus-square"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <i class=""></i>
+                    <td>
+                      4015
+                      <span class="dropdown row-hover-class ms-1 ">
+                        <i class="far fa-edit navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-arrow-right navy-color p-2"></i></span> Wrong</p>
+                          <p class="px-2"> <span><i class="fas fa-arrow-right purpel-color p-2"></i></span> Right </p>
+                        </ul>
+                      </span>
+                    </td>
+
+                    <td  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Korim Uddin</td>
+                    <td>Boshundhara Ra</td>
+                    <td>Dhaka</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <i class=""></i>
+                    <td>
+                      4015
+                      <span class="dropdown row-hover-class ms-1 ">
+                        <i class="far fa-edit navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-arrow-right navy-color p-2"></i></span> Wrong</p>
+                          <p class="px-2"> <span><i class="fas fa-arrow-right purpel-color p-2"></i></span> Right </p>
+                        </ul>
+                      </span>
+                    </td>
+
+                    <td  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Korim Uddin</td>
+                    <td>Boshundhara Ra</td>
+                    <td>Dhaka</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <i class=""></i>
+                    <td>
+                      4015
+                      <span class="dropdown row-hover-class ms-1 ">
+                        <i class="far fa-edit navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-arrow-right navy-color p-2"></i></span> Wrong</p>
+                          <p class="px-2"> <span><i class="fas fa-arrow-right purpel-color p-2"></i></span> Right </p>
+                        </ul>
+                      </span>
+                    </td>
+
+                    <td  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Korim Uddin</td>
+                    <td>Boshundhara Ra</td>
+                    <td>Dhaka</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <i class=""></i>
+                    <td>
+                      4015
+                      <span class="dropdown row-hover-class ms-1 ">
+                        <i class="far fa-edit navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-arrow-right navy-color p-2"></i></span> Wrong</p>
+                          <p class="px-2"> <span><i class="fas fa-arrow-right purpel-color p-2"></i></span> Right </p>
+                        </ul>
+                      </span>
+                    </td>
+
+                    <td  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Korim Uddin</td>
+                    <td>Boshundhara Ra</td>
+                    <td>Dhaka</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <i class=""></i>
+                    <td>
+                      4015
+                      <span class="dropdown row-hover-class ms-1 ">
+                        <i class="far fa-edit navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-arrow-right navy-color p-2"></i></span> Wrong</p>
+                          <p class="px-2"> <span><i class="fas fa-arrow-right purpel-color p-2"></i></span> Right </p>
+                        </ul>
+                      </span>
+                    </td>
+
+                    <td  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Korim Uddin</td>
+                    <td>Boshundhara Ra</td>
+                    <td>Dhaka</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <i class=""></i>
+                    <td>
+                      4015
+                      <span class="dropdown row-hover-class ms-1 ">
+                        <i class="far fa-edit navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-arrow-right navy-color p-2"></i></span> Wrong</p>
+                          <p class="px-2"> <span><i class="fas fa-arrow-right purpel-color p-2"></i></span> Right </p>
+                        </ul>
+                      </span>
+                    </td>
+
+                    <td  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Korim Uddin</td>
+                    <td>Boshundhara Ra</td>
+                    <td>Dhaka</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <i class=""></i>
+                    <td>
+                      4015
+                      <span class="dropdown row-hover-class ms-1 ">
+                        <i class="far fa-edit navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-arrow-right navy-color p-2"></i></span> Wrong</p>
+                          <p class="px-2"> <span><i class="fas fa-arrow-right purpel-color p-2"></i></span> Right </p>
+                        </ul>
+                      </span>
+                    </td>
+
+                    <td  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Korim Uddin</td>
+                    <td>Boshundhara Ra</td>
+                    <td>Dhaka</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <i class=""></i>
+                    <td>
+                      4015
+                      <span class="dropdown row-hover-class ms-1 ">
+                        <i class="far fa-edit navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-arrow-right navy-color p-2"></i></span> Wrong</p>
+                          <p class="px-2"> <span><i class="fas fa-arrow-right purpel-color p-2"></i></span> Right </p>
+                        </ul>
+                      </span>
+                    </td>
+
+                    <td  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>Korim Uddin</td>
+                    <td>Boshundhara Ra</td>
+                    <td>Dhaka</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-square navy-color dt-font-size" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                          <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">4015</td>
+                    <td>SO21110008</td>
+                    <td>ILLIYEEN</td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                          <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                          </p>
+                        </ul>
+                      </div>
+                    </td>
+
+                    <td>
+                      <div class="dropdown">
+                        <i class="far fa-calendar-alt navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table>
+                            <tr class="inner-table">
+                              <td class="text-start">Order Date</td>
+                              <td class="text-end">20/12/2021</td>
+                            </tr>
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Date</td>
+                              <td class="text-end">20/01/2021</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                          <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span>
+                            Inprogress</p>
+                          <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                            Emergency</p>
+                        </ul>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <i class="fas fa-ellipsis-h navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false"></i>
+                        <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                          <table class="inner-table">
+                            <tr class="inner-table">
+                              <td class="text-start">Product Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Invoice Price</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Collected Amount</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Delivery Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">COD Charge</td>
+                              <td class="text-end"> 4546</td>
+                            </tr>
+
+                            <tr class="inner-table">
+                              <td class="text-start">Bank Statement</td>
+                              <td class="text-end">Not Uploaded</td>
+                            </tr>
+                          </table>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- hold table -->
+
+      <div class="data-table mt-5 mb-5">
+        <div class="container rounded bg-white">
+          <div class="row">
+            <div class="table-title-hold">
+              <p class="text-white">Hold</p>
+            </div>
+
+            <table class="table2" style="width:'100%';   ">
+              <thead>
+                <tr>
+                  <th>DT</th>
+                  <th>Order</th>
+                  <th>Invoice</th>
+                  <th>Store</th>
+                  <th>User Info</th>
+                  <th>Date</th>
+                  <th>Priority</th>
+                  <th><i class="far fa-plus-square"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-square navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                        <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td class="d-flex" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">4015
+                    <div class="dropdown row-hover-class">
+                      <i class="fas fa-square navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                        <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown row-hover-class">
+                      <i class="fas fa-square navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                        <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>SO21110008</td>
+                  <td>ILLIYEEN</td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                        <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                        </p>
+                      </ul>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="dropdown">
+                      <i class="far fa-calendar-alt" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                        <table>
+                          <tr class="inner-table">
+                            <td class="text-start">Order Date</td>
+                            <td class="text-end">20/12/2021</td>
+                          </tr>
+                          <tr class="inner-table">
+                            <td class="text-start">Delivery Date</td>
+                            <td class="text-end">20/01/2021</td>
+                          </tr>
+                        </table>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span> Inprogress
+                        </p>
+                        <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                          Emergency</p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-ellipsis-h purpel-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                        <table class="inner-table">
+                          <tr class="inner-table">
+                            <td class="text-start">Product Price</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Invoice Price</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Collected Amount</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Delivery Charge</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">COD Charge</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Bank Statement</td>
+                            <td class="text-end">Not Uploaded</td>
+                          </tr>
+                        </table>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-square navy-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                        <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">4015</td>
+                  <td>SO21110008</td>
+                  <td>ILLIYEEN</td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                        <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                        </p>
+                      </ul>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="dropdown">
+                      <i class="far fa-calendar-alt" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                        <table>
+                          <tr class="inner-table">
+                            <td class="text-start">Order Date</td>
+                            <td class="text-end">20/12/2021</td>
+                          </tr>
+                          <tr class="inner-table">
+                            <td class="text-start">Delivery Date</td>
+                            <td class="text-end">20/01/2021</td>
+                          </tr>
+                        </table>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span> Inprogress
+                        </p>
+                        <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                          Emergency</p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-ellipsis-h purpel-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                        <table class="inner-table">
+                          <tr class="inner-table">
+                            <td class="text-start">Product Price</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Invoice Price</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Collected Amount</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Delivery Charge</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">COD Charge</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Bank Statement</td>
+                            <td class="text-end">Not Uploaded</td>
+                          </tr>
+                        </table>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-square purpel-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                        <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td data-bs-toggle="tooltip" data-bs-placement="bottom" title="Paid Delivery">4015</td>
+                  <td>SO21110008</td>
+                  <td>ILLIYEEN</td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                        <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                        </p>
+                      </ul>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="dropdown">
+                      <i class="far fa-calendar-alt" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                        <table>
+                          <tr class="inner-table">
+                            <td class="text-start">Order Date</td>
+                            <td class="text-end">20/12/2021</td>
+                          </tr>
+                          <tr class="inner-table">
+                            <td class="text-start">Delivery Date</td>
+                            <td class="text-end">20/01/2021</td>
+                          </tr>
+                        </table>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span> Inprogress
+                        </p>
+                        <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                          Emergency</p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-ellipsis-h purpel-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                        <table class="inner-table">
+                          <tr class="inner-table">
+                            <td class="text-start">Product Price</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Invoice Price</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Collected Amount</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Delivery Charge</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">COD Charge</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Bank Statement</td>
+                            <td class="text-end">Not Uploaded</td>
+                          </tr>
+                        </table>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-square purpel-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-square navy-color p-2"></i></span> Test</p>
+                        <p class="px-2"> <span><i class="fas fa-square purpel-color p-2"></i></span> Test </p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cash On Delivery">4015</td>
+                  <td>SO21110008</td>
+                  <td>ILLIYEEN</td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="far fa-user" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="px-2"><span> <i class="fas fa-user navy-color p-2"></i></span> Rayan Khan</p>
+                        <p class="px-2"> <span><i class="fas fa-phone-alt purpel-color p-2"></i></span> +8801744594119
+                        </p>
+                      </ul>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="dropdown">
+                      <i class="far fa-calendar-alt" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                        <table>
+                          <tr class="inner-table">
+                            <td class="text-start">Order Date</td>
+                            <td class="text-end">20/12/2021</td>
+                          </tr>
+                          <tr class="inner-table">
+                            <td class="text-start">Delivery Date</td>
+                            <td class="text-end">20/01/2021</td>
+                          </tr>
+                        </table>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-flag" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right" aria-labelledby="dropdownMenuButton1">
+                        <p class="inner-table px-2 "><span> <i class="fas fa-flag navy-color p-2"></i></span> Inprogress
+                        </p>
+                        <p class=".inner-table px-2"> <span><i class="fas fa-flag purpel-color p-2"></i></span>
+                          Emergency</p>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <i class="fas fa-ellipsis-h purpel-color" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                      <ul class="dropdown-menu margin-right p-0" aria-labelledby="dropdownMenuButton1">
+                        <table class="inner-table">
+                          <tr class="inner-table">
+                            <td class="text-start">Product Price</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Invoice Price</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Collected Amount</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Delivery Charge</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">COD Charge</td>
+                            <td class="text-end"> 4546</td>
+                          </tr>
+
+                          <tr class="inner-table">
+                            <td class="text-start">Bank Statement</td>
+                            <td class="text-end">Not Uploaded</td>
+                          </tr>
+                        </table>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <script src="../dist/js/jquery-3.5.1.min.js"></script>
+  <script src="../dist/js/script.js"></script>
+
+
+
+  <!-- 
+    <script>
+
+        const safawat = () => {
+
+            const buttonImageId = document.getElementsByClassName('.side-bar-arrow');
+            var icon = this.querySelector('.side-bar-arrow');
+            icon.classList.toggle('rotate');
+        }
+
+    </script> -->
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('#slectValue').select2();
+    });
+
+    $(document).ready(function () {
+      $('#store').select2();
+    });
+    $(document).ready(function () {
+      $('#driver').select2();
+    });
+    $(document).ready(function () {
+      $('#payment').select2();
+    });
+    $(document).ready(function () {
+      $('#settled').select2();
+    });
+    $(document).ready(function () {
+      $('#status').select2();
+    });
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>

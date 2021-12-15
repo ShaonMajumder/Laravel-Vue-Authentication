@@ -13,6 +13,6 @@ class SecretSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }

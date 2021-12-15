@@ -10,6 +10,7 @@
 
 ## Installation
 ```bash
+sudo ls
 composer create-project laravel/laravel vue-laravel-authentication
 composer require laravel/ui
 php artisan ui vue --auth
@@ -30,6 +31,17 @@ sudo git push origin master
  --- after giving credentials
 git config credential.helper store
 ```
+
+Model Methods
+Factory, Seeding 
+
+### API Authentication
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+php artisan migrate
+app/Http/Kernel.php :
+comment out \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+https://laravel.com/docs/8.x/sanctum
 
 ## About Laravel
 

@@ -14,7 +14,8 @@ class SecretFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'user_id' => 1,
+            'secret' => $this->faker->text,
         ];
     }
 }
