@@ -9,7 +9,7 @@
 
 
 ## Installation
-"""
+```bash
 composer create-project laravel/laravel vue-laravel-authentication
 composer require laravel/ui
 php artisan ui vue --auth
@@ -29,7 +29,7 @@ git remote add origin https://github.com/ShaonMajumder/Laravel-Vue-Authenticatio
 sudo git push origin master
  --- after giving credentials
 git config credential.helper store
-"""
+```
 
 ## About Laravel
 
